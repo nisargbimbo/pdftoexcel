@@ -1,0 +1,8 @@
+streamlit
+paddlepaddle
+paddleocr
+matplotlib
+numpy
+pandas
+pdf2image
+stqdm
