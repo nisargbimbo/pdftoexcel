@@ -3,8 +3,9 @@ FROM python:3.7
 WORKDIR /app
 
 #COPY packages.txt ./packages.txt
-# RUN apt-get install libgl1
-# RUN aptget install poppler-utils
+RUN apt-get update
+RUN apt-get install -y libgl1
+RUN apt-get install -y poppler-utils
 
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
