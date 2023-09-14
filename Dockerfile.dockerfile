@@ -10,4 +10,4 @@ EXPOSE 8080
 COPY . .
 
 ENTRYPOINT ["streamlit", "run"]
-CMD ["streamlit_app.py", "--server.port", "8080"]
+CMD ["app.py", "--server.port", "8080"]
