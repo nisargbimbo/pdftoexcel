@@ -6,6 +6,8 @@ WORKDIR /app
 RUN apt-get update
 RUN apt-get install -y libgl1
 RUN apt-get install -y poppler-utils
+COPY libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb ./libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+RUN apt-get install ./libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
 
 COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
