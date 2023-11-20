@@ -1,6 +1,6 @@
 import streamlit as st
 from paddleocr import PaddleOCR,draw_ocr
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from pdf2image import convert_from_path, convert_from_bytes
